@@ -61,6 +61,33 @@ namespace EXIFPhotoEditor.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Can&apos;t find coords for photo {0}.
+        /// </summary>
+        internal static string CanTFindCoordsForPhotoLog {
+            get {
+                return ResourceManager.GetString("CanTFindCoordsForPhotoLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Координаты для фотографии {0} не найдены.
+        /// </summary>
+        internal static string CantFindCoordsForPhotoUI {
+            get {
+                return ResourceManager.GetString("CantFindCoordsForPhotoUI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Can&apos;t open file.
+        /// </summary>
+        internal static string CanTOpenFile {
+            get {
+                return ResourceManager.GetString("CanTOpenFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Было обработано {0} файлов. {1}.
         /// </summary>
         internal static string CountFilesWasProcessed {
@@ -102,6 +129,24 @@ namespace EXIFPhotoEditor.Properties {
         internal static string ErrorReadInfoFromFile {
             get {
                 return ResourceManager.GetString("ErrorReadInfoFromFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error read track file {0}.
+        /// </summary>
+        internal static string ErrorReadTrackFileLog {
+            get {
+                return ResourceManager.GetString("ErrorReadTrackFileLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ошибка чтения файла трека {0}.
+        /// </summary>
+        internal static string ErrorREadTrackFileUI {
+            get {
+                return ResourceManager.GetString("ErrorREadTrackFileUI", resourceCulture);
             }
         }
         

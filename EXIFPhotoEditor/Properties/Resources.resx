@@ -156,4 +156,24 @@
     <value>Некорректное число минут</value>
     <comment>NotCorrectDeltaTime description</comment>
   </data>
+  <data name="ErrorREadTrackFileUI" xml:space="preserve">
+    <value>Ошибка чтения файла трека {0}</value>
+    <comment>ErrorREadTrackFileUI description</comment>
+  </data>
+  <data name="ErrorReadTrackFileLog" xml:space="preserve">
+    <value>Error read track file {0}</value>
+    <comment>ErrorReadTrackFileLog description</comment>
+  </data>
+  <data name="CantFindCoordsForPhotoUI" xml:space="preserve">
+    <value>Координаты для фотографии {0} не найдены</value>
+    <comment>CantFindCoordsForPhotoUI description</comment>
+  </data>
+  <data name="CanTFindCoordsForPhotoLog" xml:space="preserve">
+    <value>Can't find coords for photo {0}</value>
+    <comment>CanTFindCoordsForPhotoLog description</comment>
+  </data>
+  <data name="CanTOpenFile" xml:space="preserve">
+    <value>Can't open file</value>
+    <comment>CanTOpenFile description</comment>
+  </data>
 </root>

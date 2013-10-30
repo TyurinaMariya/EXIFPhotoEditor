@@ -60,7 +60,7 @@ namespace EXIFPhotoEditor
                     this.Enabled = true;
                     MessageBox.Show(String.Format(Resources.CountFilesWasProcessed,
                         countChangedFiles, String.IsNullOrEmpty(errors) ? Resources.WithoutErrors : 
-                         "\r\nОшибки:"+ errors),
+                         "\r\n" +Resources.Error+ errors),
                         Resources.Result, MessageBoxButtons.OK, MessageBoxIcon.Information);
                     progressBar1.Value =1; 
                 });

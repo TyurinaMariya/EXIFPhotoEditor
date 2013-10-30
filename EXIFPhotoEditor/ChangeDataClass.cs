@@ -22,11 +22,6 @@ namespace EXIFPhotoEditor
       
         private const string NEW_PATH = "\\new\\";
 
-        public ChangeDataClass()
-        {
-            
-        }
-
         /// <summary>
         /// Change time creating photo for all photofiles in folder
         /// </summary>
@@ -131,8 +126,8 @@ namespace EXIFPhotoEditor
             }
             catch (Exception e)
             {
-                errors = String.Format("Ошибка чтения файла трека {0}", pathToTrack);
-                m_Log.Error(String.Format("Error read track file {0}", pathToTrack), e);
+                errors = String.Format(Resources.ErrorREadTrackFileUI, pathToTrack);
+                m_Log.Error(String.Format(Resources.ErrorReadTrackFileLog, pathToTrack), e);
                 return 0;
             }
             int countChangedFiles = 0;
@@ -152,9 +147,9 @@ namespace EXIFPhotoEditor
                                         new GeoDataWorker().GetGeoForPointByTime(photoExifInfo.GetDateTimeTaken().AddHours(-timezone), track);
                                     if (geoData == null)
                                     {
-                                        er = String.Format("Координаты для фотографии {0} не найдены",
+                                        er = String.Format(EXIFPhotoEditor.Properties.Resources.CantFindCoordsForPhotoUI,
                                             file);
-                                        m_Log.ErrorFormat("Can't find coords for photo {0}", file);
+                                        m_Log.ErrorFormat(EXIFPhotoEditor.Properties.Resources.CanTFindCoordsForPhotoLog, file);
                                         return false;
                                     }
                                     photoExifInfo.ChangeGeoData(geoData.Value.Latitude,geoData.Value.Longitude, geoData.Value.Altitude);

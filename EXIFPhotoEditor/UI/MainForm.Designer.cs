@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.b_ChangeDateTime = new System.Windows.Forms.Button();
             this.tb_Minutes = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,7 +53,7 @@
             // 
             this.b_ChangeDateTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.b_ChangeDateTime.Location = new System.Drawing.Point(12, 115);
+            this.b_ChangeDateTime.Location = new System.Drawing.Point(6, 115);
             this.b_ChangeDateTime.Name = "b_ChangeDateTime";
             this.b_ChangeDateTime.Size = new System.Drawing.Size(365, 23);
             this.b_ChangeDateTime.TabIndex = 0;
@@ -86,7 +87,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.b_ChangeGeoData.Location = new System.Drawing.Point(6, 115);
             this.b_ChangeGeoData.Name = "b_ChangeGeoData";
-            this.b_ChangeGeoData.Size = new System.Drawing.Size(369, 23);
+            this.b_ChangeGeoData.Size = new System.Drawing.Size(363, 23);
             this.b_ChangeGeoData.TabIndex = 3;
             this.b_ChangeGeoData.Text = "Изменить гео-данные";
             this.b_ChangeGeoData.UseVisualStyleBackColor = true;
@@ -112,10 +113,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.tb_Minutes);
             this.groupBox1.Controls.Add(this.b_ChangeDateTime);
-            this.groupBox1.Location = new System.Drawing.Point(12, 154);
+            this.groupBox1.Location = new System.Drawing.Point(12, 166);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(377, 147);
             this.groupBox1.TabIndex = 7;
@@ -124,7 +126,8 @@
             // 
             // ilb_files
             // 
-            this.ilb_files.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.ilb_files.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ilb_files.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.ilb_files.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -138,13 +141,15 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.tb_timeZone);
             this.groupBox2.Controls.Add(this.tb_pathToGpxFile);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.b_openTrackFile);
             this.groupBox2.Controls.Add(this.b_ChangeGeoData);
-            this.groupBox2.Location = new System.Drawing.Point(395, 154);
+            this.groupBox2.Location = new System.Drawing.Point(395, 166);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(375, 147);
             this.groupBox2.TabIndex = 8;
@@ -191,8 +196,7 @@
             // 
             // b_openTrackFile
             // 
-            this.b_openTrackFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.b_openTrackFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.b_openTrackFile.Location = new System.Drawing.Point(333, 38);
             this.b_openTrackFile.Name = "b_openTrackFile";
             this.b_openTrackFile.Size = new System.Drawing.Size(36, 23);
@@ -205,7 +209,7 @@
             // 
             this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBar1.Location = new System.Drawing.Point(5, 306);
+            this.progressBar1.Location = new System.Drawing.Point(5, 318);
             this.progressBar1.Minimum = 1;
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(773, 17);
@@ -217,12 +221,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 325);
+            this.ClientSize = new System.Drawing.Size(782, 337);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.ilb_files);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.b_LoadPhoto);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(798, 375);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Редактор EXIF информации";
